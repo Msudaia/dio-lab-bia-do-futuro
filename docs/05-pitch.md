@@ -12,7 +12,7 @@ O problema não é falta de dinheiro — é falta de visibilidade e direcionamen
 ### 1. O Problema (30 seg)
 > Qual dor do cliente você resolve?
 
-Para resolver isso, eu desenvolvi o FinOpt, um agente financeiro inteligente focado em otimização de gastos.
+Para resolver isso, eu desenvolvi o Guarda Dinheiro AI, um agente financeiro inteligente focado em otimização de gastos.
 
 Ele funciona como um mini consultor financeiro pessoal, analisando a renda e os gastos do usuário de forma estruturada.
 
@@ -30,7 +30,7 @@ Por exemplo, ao invés de dizer “você está gastando muito”, ele entrega al
 Ou seja, transforma dados em decisões.
 
 ### 2. A Solução (1 min)
-Para resolver isso, eu desenvolvi o FinOpt, um agente financeiro inteligente focado em otimização de gastos.
+Para resolver isso, eu desenvolvi o Guarda Dinheiro AI, um agente financeiro inteligente focado em otimização de gastos.
 
 Ele funciona como um mini consultor financeiro pessoal, analisando a renda e os gastos do usuário de forma estruturada.
 
