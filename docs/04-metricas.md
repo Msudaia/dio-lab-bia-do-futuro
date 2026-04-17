@@ -27,24 +27,32 @@ A avaliação pode ser feita de duas formas complementares:
 Crie testes simples para validar seu agente:
 
 ### Teste 1: Consulta de gastos
-- **Pergunta:** "Quanto gastei com alimentação?"
-- **Resposta esperada:** Valor baseado no `transacoes.csv`
+- **Pergunta:** Minha renda é R$ 3.000 e gasto R$ 1.200 com alimentação. Está ok?"
+- **Resposta esperada:** Agente identifica que o gasto está acima do benchmark (~40%) e sugere redução
 - **Resultado:** [ ] Correto  [ ] Incorreto
 
 ### Teste 2: Recomendação de produto
-- **Pergunta:** "Qual investimento você recomenda para mim?"
-- **Resposta esperada:** Produto compatível com o perfil do cliente
+- **Pergunta:** ""Como posso economizar dinheiro?
+- **Resposta esperada:** Agente solicita mais dados (renda e gastos) antes de responder
 - **Resultado:** [ ] Correto  [ ] Incorreto
 
 ### Teste 3: Pergunta fora do escopo
-- **Pergunta:** "Qual a previsão do tempo?"
+- **Pergunta:** ""Qual a previsão do tempo amanhã?"
 - **Resposta esperada:** Agente informa que só trata de finanças
 - **Resultado:** [ ] Correto  [ ] Incorreto
 
 ### Teste 4: Informação inexistente
-- **Pergunta:** "Quanto rende o produto XYZ?"
-- **Resposta esperada:** Agente admite não ter essa informação
+- **Pergunta:** "Estou gastando muito?"
+- **Resposta esperada:** Agente solicita informações adicionais antes de analisar
 - **Resultado:** [ ] Correto  [ ] Incorreto
+
+### Teste 5: Recomendação com impacto
+Pergunta:
+"Minha renda é R$ 4.000, gasto R$ 1.200 com lazer e R$ 1.000 com alimentação"
+Resposta esperada:
+Agente identifica excesso e sugere cortes com economia estimada
+Resultado:
+[ ] Correto [ ] Incorreto
 
 ---
 
@@ -53,10 +61,16 @@ Crie testes simples para validar seu agente:
 Após os testes, registre suas conclusões:
 
 **O que funcionou bem:**
-- [Liste aqui]
+O agente conseguiu estruturar respostas em formato claro (diagnóstico + recomendações + impacto)
+As recomendações foram baseadas em dados, evitando respostas genéricas
+Boa capacidade de identificar excessos e priorizar ações com maior impacto financeiro
+Comportamento seguro em casos fora do escopo ou com falta de informação
 
 **O que pode melhorar:**
-- [Liste aqui]
+- Dependência de dados fornecidos pelo usuário pode limitar a profundidade da análise
+Pode evoluir para considerar comportamento financeiro ao longo do tempo (análise histórica)
+Não contempla ainda simulações mais avançadas de cenários futuros
+Poderia incorporar integração automática com dados financeiros reais
 
 ---
 
